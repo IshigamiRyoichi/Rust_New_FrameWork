@@ -4,8 +4,11 @@ mkdir ./$1/templates
 mkdir ./$1/model
 mkdir ./$1/model/db
 mkdir ./$1/css
-mkdir ./$1/test
+mkdir ./$1/src/test
+mkdir ./$1/src/test/data_json
 touch ./$1/css/style.css
+touch ./$1/src/test/data_json/model_file.json
+touch ./$1/src/test/data_json/input_file.json
 name = $1
 
 echo '<!DOCTYPE html>
@@ -165,4 +168,8 @@ cargo add askama
 cargo add rusqlite
 cargo add serde
 cargo add serde_json
+cargo add scraper
+cargo add glob
+cargo add html5ever
+cargo add serde_derive
 cargo build
