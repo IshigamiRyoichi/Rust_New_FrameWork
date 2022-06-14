@@ -1,0 +1,38 @@
+[package]
+name = "web_app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "create_table"
+path = "model/create_DB.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "create_json"
+path = "src/test/anarisis_code_to_json.rs"
+
+[[bin]]
+name = "test"
+path = "src/test/test.rs"
+
+[dependencies]
+actix-web = "4.0.1"
+actix-rt = "1.1.1"
+thiserror = "1.0.30"
+askama = "0.11.1"
+rusqlite = "0.21"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+linked-hash-map = "0.5.4"
+total-order-multi-map = "0.4.6"
+scraper = "0.13.0"
+glob = "0.3.0"
+html5ever = "0.26.0"
+serde_derive = "1.0.137"
+rustc-serialize = "0.3.24"
