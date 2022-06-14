@@ -1,0 +1,11 @@
+{
+    "databases":{
+        "sql":{
+            "table_test":{
+                "id":"INTEGER PRIMARY KEY",
+                "name":"TEXT",
+                "mail":"TEXT"
+            }
+        }
+    }
+}
