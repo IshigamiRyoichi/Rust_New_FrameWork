@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#particle-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.model_canvas_style{
+    position: fixed;
+    border: 2px solid #570795; /* 枠の太さ・種類・色 */
+    border-radius: 4px; /* 枠の丸み */
+    margin: 10px 10px 10px 10px; /* 枠外の余白 */
+    padding: 10px 10px 10px 10px;
+    width: 2400px;
+    height: 1200px;
+    background-color: #ffffff;
+}
+
+.model_title{
+    position: absolute;
+    padding: 0 0.5em;
+    left: 20px;
+    top: -13px; /* タイトルの位置を調整 */
+    color: #000000; /* タイトルの文字色 */
+    font-weight: bold;
+    font-size:0.9em; /* タイトルの文字サイズ */
+    background-color: #ffffff;
+}
