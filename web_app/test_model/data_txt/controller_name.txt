@@ -1,3 +1,7 @@
 index
 login
 hoge
+fuga
+view
+select
+DB
